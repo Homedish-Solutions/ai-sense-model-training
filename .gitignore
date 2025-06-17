@@ -11,7 +11,14 @@ build/
 venv/
 ENV/
 env/
+venv/
+.venv/
 pip-wheel-metadata/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
 
 # Jupyter
 .ipynb_checkpoints/

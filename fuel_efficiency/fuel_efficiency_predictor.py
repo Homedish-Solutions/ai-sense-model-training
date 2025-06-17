@@ -84,6 +84,6 @@ test_predictions = model.predict(normed_test_data).flatten()
 #Model Conversion -saves the model in HDF5 format (.h5)
 kearas_file = "automobile.keras"
 tf.keras.models.save_model(model,kearas_file)
-converter:bytes = tf.lite.TFLiteConverter.from_keras_model(model)
+converter = tf.lite.TFLiteConverter.from_keras_model(model)
 tfmodel = converter.convert()
 open("automobile.tflite","wb").write(tfmodel)
